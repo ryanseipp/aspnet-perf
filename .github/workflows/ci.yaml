@@ -15,7 +15,7 @@ jobs:
         with:
           dotnet-version: '7.x'
 
-      - run: dontet build
+      - run: dotnet build
 
   build_docker:
     name: Build Docker Image
