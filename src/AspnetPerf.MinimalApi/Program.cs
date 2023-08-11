@@ -1,4 +1,5 @@
 using AspnetPerf.MinimalApi.Domain.Entities;
+using AspnetPerf.MinimalApi.Endpoints.Todos;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,5 +25,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapHealthChecks("/healthz");
+app.MapRoutes();
+
 
 app.Run();

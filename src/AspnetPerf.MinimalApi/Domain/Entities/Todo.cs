@@ -28,6 +28,12 @@ public class Todo
         UpdatedAtTimestampUtc = DateTimeOffset.UtcNow;
     }
 
+    public void Restart()
+    {
+        Status = TodoStatus.InProgress;
+        UpdatedAtTimestampUtc = DateTimeOffset.UtcNow;
+    }
+
     public void Complete()
     {
         Status = TodoStatus.Completed;
